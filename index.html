@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="image/png" sizes="32x32" rel="icon" href="Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+      <div class="header">
+        <h1>STUDENT ENROLLEMENT FORM</h1>
+      </div>
+      <div class="input">
+        <table>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <td><input type="text" name="fname" id="fname"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Last Name</th>
+                <td><input type="text" name="lname" id="lname"></td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td><input type="text" name="email" id="email"></td>
+              </tr>
+              <tr>
+                <th>Gender</th>
+                <td><input type="text" name="gender" id="gender"></td>
+              </tr>
+              <tr>
+                <th>Age</th>
+                <td><input type="text" name="age" id="age"></td>
+              </tr>
+              <tr id="btna">
+                <td colspan="1"><input type="button" name="button" id="btn" value="ADD" onclick="AddRow()"></td>
+              </tr>
+              <tr id="btna">
+                <td colspan="1"><input type="button" name="button" id="btn1" value="CLEAR" onclick="handleClick()"></td>
+              </tr>
+            </tbody>
+        </table>     
+      </div>
+
+      <hr>
+      <table border="1" id="show">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+
+      </table>
+    </center>
+  
+    <script src="index.js"></script>
+</body>
+</html>
